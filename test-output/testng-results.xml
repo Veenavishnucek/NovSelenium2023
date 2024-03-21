@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-20T21:41:42 IST" name="Suite" finished-at="2024-03-20T21:41:51 IST" duration-ms="9771">
+    <groups>
+    </groups>
+    <test started-at="2024-03-20T21:41:42 IST" name="chrometest" finished-at="2024-03-20T21:41:46 IST" duration-ms="4196">
+      <class name="testngpkg.Crossbrowsertestng">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testngpkg.Crossbrowsertestng@70e9c95d]" started-at="2024-03-20T21:41:42 IST" name="setUp" finished-at="2024-03-20T21:41:45 IST" duration-ms="3073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:testngpkg.Crossbrowsertestng@70e9c95d]" started-at="2024-03-20T21:41:45 IST" name="test" finished-at="2024-03-20T21:41:46 IST" duration-ms="1091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- testngpkg.Crossbrowsertestng -->
+    </test> <!-- chrometest -->
+    <test started-at="2024-03-20T21:41:46 IST" name="edgetest" finished-at="2024-03-20T21:41:51 IST" duration-ms="5017">
+      <class name="testngpkg.Crossbrowsertestng">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testngpkg.Crossbrowsertestng@15bb5034]" started-at="2024-03-20T21:41:46 IST" name="setUp" finished-at="2024-03-20T21:41:49 IST" duration-ms="3381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:testngpkg.Crossbrowsertestng@15bb5034]" started-at="2024-03-20T21:41:49 IST" name="test" finished-at="2024-03-20T21:41:51 IST" duration-ms="1633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- testngpkg.Crossbrowsertestng -->
+    </test> <!-- edgetest -->
+    <test started-at="2024-03-20T21:41:51 IST" name="firefoxtest" finished-at="2024-03-20T21:41:51 IST" duration-ms="499">
+      <class name="testngpkg.Crossbrowsertestng">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:testngpkg.Crossbrowsertestng@2cf3d63b]" started-at="2024-03-20T21:41:51 IST" name="setUp" finished-at="2024-03-20T21:41:51 IST" duration-ms="472" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+error sending request for url (https://product-details.mozilla.org/1.0/firefox_versions.json): error trying to connect: An existing connection was forcibly closed by the remote host. (os error 10054)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+error sending request for url (https://product-details.mozilla.org/1.0/firefox_versions.json): error trying to connect: An existing connection was forcibly closed by the remote host. (os error 10054)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:48)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:133)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:113)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+at testngpkg.Crossbrowsertestng.setUp(Crossbrowsertestng.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+error sending request for url (https://product-details.mozilla.org/1.0/firefox_versions.json): error trying to connect: An existing connection was forcibly closed by the remote host. (os error 10054)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:159)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:303)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test()[pri:0, instance:testngpkg.Crossbrowsertestng@2cf3d63b]" started-at="2024-03-20T21:41:51 IST" name="test" finished-at="2024-03-20T21:41:51 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+error sending request for url (https://product-details.mozilla.org/1.0/firefox_versions.json): error trying to connect: An existing connection was forcibly closed by the remote host. (os error 10054)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+error sending request for url (https://product-details.mozilla.org/1.0/firefox_versions.json): error trying to connect: An existing connection was forcibly closed by the remote host. (os error 10054)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:48)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:141)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:133)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:113)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+at testngpkg.Crossbrowsertestng.setUp(Crossbrowsertestng.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+error sending request for url (https://product-details.mozilla.org/1.0/firefox_versions.json): error trying to connect: An existing connection was forcibly closed by the remote host. (os error 10054)
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:159)
+at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:303)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- testngpkg.Crossbrowsertestng -->
+    </test> <!-- firefoxtest -->
+  </suite> <!-- Suite -->
+</testng-results>
